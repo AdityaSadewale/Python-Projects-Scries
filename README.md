@@ -1,6 +1,7 @@
 🏠 Smart Room Rent Calculator (Python Project)
 📌 Project Description
 
+
 This is a beginner-friendly Python project that helps calculate shared living expenses such as rent, food, and electricity. It also allows adding roommate details and generates a friendly monthly payment message for each person 📩.
 
 🚀 Features
