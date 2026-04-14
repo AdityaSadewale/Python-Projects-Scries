@@ -6,6 +6,7 @@
 # Electricity units Spend by room also
 # charge Per UNit
 # Persons living in room
+# this python project for lern a bacis undersanding of  python 
 
 
 rent = int(input("Enter your hostel/flat rent = "))
