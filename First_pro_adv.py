@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import messagebox
 
-# Store roommates
 roommates = []
 
 def add_person():
@@ -43,7 +42,7 @@ def calculate_and_send():
         total = rent + food + electricity
         per_person = total / persons
 
-        # Generate message
+        # this will be genrate a message for user for total cacultion of resnt of this mounts for equily distubuted also ...
         for person in roommates:
             msg = f"""
 📢 Hello {person['name']} 👋
@@ -62,6 +61,7 @@ def calculate_and_send():
 
 Thank you 😊
 """
+            # This also put information foe user also for has Phone number ,msg and  totaly rent of this mounts ...
             print(f"Sending to {person['phone']} 📱")
             print(msg)
             print("-" * 40)
@@ -77,7 +77,7 @@ root = tk.Tk()
 root.title("Smart Rent Calculator 🏠")
 root.geometry("400x500")
 
-# Person Details
+# Person Details used for equily distubuted also 
 tk.Label(root, text="Name").pack()
 entry_name = tk.Entry(root)
 entry_name.pack()
