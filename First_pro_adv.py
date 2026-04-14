@@ -72,7 +72,7 @@ Thank you 😊
         messagebox.showerror("Error", "Enter valid numbers!")
 
 
-# GUI
+
 root = tk.Tk()
 root.title("Smart Rent Calculator 🏠")
 root.geometry("400x500")
@@ -92,7 +92,7 @@ entry_email.pack()
 
 tk.Button(root, text="Add Person ➕", command=add_person).pack(pady=5)
 
-# Rent Inputs
+# Rent Inputs for user this give basic info for input cost also ...
 tk.Label(root, text="Rent").pack()
 entry_rent = tk.Entry(root)
 entry_rent.pack()
