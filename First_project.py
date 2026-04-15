@@ -8,7 +8,7 @@
 # Persons living in room
 # this python project for lern a bacis undersanding of  python 
 
-
+# this also be a used to input for  user also 
 rent = int(input("Enter your hostel/flat rent = "))
 food =int(input("Enter the amount of food ordered = "))
 electricity_spend = int(input("Enter the total of electricity spend = "))
