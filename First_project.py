@@ -17,6 +17,7 @@ persons = int(input("Enter the numbers of persons living in room/flat = "))
 
 total_bill = electricity_spend * charge_per_unit
 
+# this will be calculated a  rent for this room and addition thigs that take for each one also ...
 output = (food + rent + total_bill) // persons
 
 print("Each person will pay this amount = ", output)
