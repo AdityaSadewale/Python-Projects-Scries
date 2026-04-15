@@ -47,6 +47,7 @@ def calculate_and_send():
             msg = f"""
 📢 Hello {person['name']} 👋
 
+# message for each like thsi 
 🏠 Monthly Rent Details:
 💰 Rent: ₹{rent}
 🍔 Food: ₹{food}
