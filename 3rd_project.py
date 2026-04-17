@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import filedialog, messagebox, simpledialog
 
-# ---------- Functions ----------
 
 def new_file(event=None):
     text.delete(1.0, tk.END)
@@ -26,7 +25,7 @@ def save_file(event=None):
             file.write(text.get(1.0, tk.END))
         messagebox.showinfo("Saved", "File saved!")
 
-# ---------- Line Numbers ----------
+# Line Numbers
 def update_line_numbers(event=None):
     lines = text.get("1.0", "end-1c").split("\n")
     line_numbers.config(state='normal')
@@ -37,12 +36,12 @@ def update_line_numbers(event=None):
     
     line_numbers.config(state='disabled')
 
-# ---------- Status Bar ----------
+# ---------- Status Bar 
 def update_status(event=None):
     row, col = text.index(tk.INSERT).split(".")
     status_bar.config(text=f"Line: {row} | Column: {col}")
 
-# ---------- Find ----------
+# ---------- Find 
 def find_text():
     find = simpledialog.askstring("Find", "Enter text:")
     text.tag_remove("highlight", "1.0", tk.END)
@@ -59,12 +58,12 @@ def find_text():
         
         text.tag_config("highlight", background="yellow")
 
-# ---------- Window ----------
+# ---------- Window 
 root = tk.Tk()
 root.title("Mini VS Code 🧠")
 root.geometry("900x600")
 
-# ---------- Menu ----------
+# ---------- Menu 
 menu = tk.Menu(root)
 root.config(menu=menu)
 
@@ -80,7 +79,7 @@ edit_menu = tk.Menu(menu, tearoff=0)
 menu.add_cascade(label="Edit", menu=edit_menu)
 edit_menu.add_command(label="Find", command=find_text)
 
-# ---------- Layout ----------
+#Layout
 frame = tk.Frame(root)
 frame.pack(fill=tk.BOTH, expand=True)
 
