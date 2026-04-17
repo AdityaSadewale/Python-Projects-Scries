@@ -36,12 +36,12 @@ def update_line_numbers(event=None):
     
     line_numbers.config(state='disabled')
 
-# ---------- Status Bar 
+# Status Bar 
 def update_status(event=None):
     row, col = text.index(tk.INSERT).split(".")
     status_bar.config(text=f"Line: {row} | Column: {col}")
 
-# ---------- Find 
+# Find 
 def find_text():
     find = simpledialog.askstring("Find", "Enter text:")
     text.tag_remove("highlight", "1.0", tk.END)
@@ -58,12 +58,12 @@ def find_text():
         
         text.tag_config("highlight", background="yellow")
 
-# ---------- Window 
+# Window 
 root = tk.Tk()
 root.title("Mini VS Code 🧠")
 root.geometry("900x600")
 
-# ---------- Menu 
+# Menu 
 menu = tk.Menu(root)
 root.config(menu=menu)
 
@@ -92,11 +92,11 @@ line_numbers.pack(side=tk.LEFT, fill=tk.Y)
 text = tk.Text(frame, wrap=tk.NONE, font=("Consolas", 12))
 text.pack(side=tk.RIGHT, fill=tk.BOTH, expand=True)
 
-# ---------- Status Bar ----------
+#  Status Bar 
 status_bar = tk.Label(root, text="Line: 1 | Column: 0", anchor="w")
 status_bar.pack(fill=tk.X, side=tk.BOTTOM)
 
-# ---------- Events ----------
+#  Events 
 text.bind("<KeyRelease>", update_line_numbers)
 text.bind("<KeyRelease>", update_status)
 
@@ -106,5 +106,5 @@ root.bind("<Control-o>", open_file)
 root.bind("<Control-s>", save_file)
 root.bind("<Control-f>", lambda e: find_text())
 
-# ---------- Run ----------
+# Run-
 root.mainloop()
