@@ -41,7 +41,6 @@ def update_status(event=None):
     row, col = text.index(tk.INSERT).split(".")
     status_bar.config(text=f"Line: {row} | Column: {col}")
 
-# Find 
 def find_text():
     find = simpledialog.askstring("Find", "Enter text:")
     text.tag_remove("highlight", "1.0", tk.END)
