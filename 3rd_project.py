@@ -57,7 +57,7 @@ def find_text():
         
         text.tag_config("highlight", background="yellow")
 
-# Window 
+#Window 
 root = tk.Tk()
 root.title("Mini VS Code 🧠")
 root.geometry("900x600")
