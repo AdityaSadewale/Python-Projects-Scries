@@ -19,6 +19,7 @@ def save_file(event=None):
         defaultextension=".txt",
         filetypes=[("Text files", "*.txt")]
     )
+    
     if file_path:
         with open(file_path, 'w') as file:
             file.write(text.get(1.0, tk.END))
