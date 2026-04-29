@@ -25,7 +25,7 @@ def save_file(event=None):
             file.write(text.get(1.0, tk.END))
         messagebox.showinfo("Saved", "File saved!")
 
-# Line Numbers
+# Line Numbers of this ..
 def update_line_numbers(event=None):
     lines = text.get("1.0", "end-1c").split("\n")
     line_numbers.config(state='normal')
