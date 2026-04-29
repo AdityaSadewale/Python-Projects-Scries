@@ -1,3 +1,5 @@
+# this is funny gameit basically logicale game also shoe your logic thinking 
+
 import random
 
 def play_game():
