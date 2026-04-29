@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import filedialog, messagebox, simpledialog
 
-
 def new_file(event=None):
     text.delete(1.0, tk.END)
 
@@ -95,11 +94,11 @@ text.pack(side=tk.RIGHT, fill=tk.BOTH, expand=True)
 status_bar = tk.Label(root, text="Line: 1 | Column: 0", anchor="w")
 status_bar.pack(fill=tk.X, side=tk.BOTTOM)
 
-#  Events 
+#  Events ..
 text.bind("<KeyRelease>", update_line_numbers)
 text.bind("<KeyRelease>", update_status)
 
-# Shortcuts
+# Shortcuts of ...
 root.bind("<Control-n>", new_file)
 root.bind("<Control-o>", open_file)
 root.bind("<Control-s>", save_file)
