@@ -1,4 +1,4 @@
-🏠 Smart Room Rent Calculator (Python Project)
+<h1>🏠 Smart Room Rent Calculator (Python Project)</h1>
 📌 Project Description
 
 
